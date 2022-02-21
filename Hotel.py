@@ -99,6 +99,8 @@ class window:
             l4=Label(frame_vsite,text="MIEUX SE DIVERTIR CEST BIEN CHOISIR LENDROIT\n",bg="lavender",font=("sans serif",25))
             l4.place(x=650,y=0)
 
+            
+
             def quit():
                 frame_vsite.destroy()
             btn_quit_visit =Button(frame_vsite,width=10,height=2,bg="teal",text="Quitter",highlightbackground="red",fg="blue",borderwidth=10,command=quit)
@@ -206,6 +208,10 @@ class window:
             
             frm_reser_1= LabelFrame(frame3,width=1600,height=800,bg="white")
             frm_reser_1.place(x=60,y=80)
+
+            self.image_accueil=ImageTk.PhotoImage(file="/Users/imac_33/Projet tourisme/image_accuei.jpeg")
+            self.lbl1=Label(frm_reser_1,image=self.image_accueil,bd=0,width=770,height=350)
+            self.lbl1.place(x=860,y=400)
 
             image1=ImageTk.PhotoImage(file="img2.jpeg")
             lbl1=Label(frame3,image=image1,bd=0)
