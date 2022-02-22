@@ -22,6 +22,10 @@ lbl2=Label(root,image=image2,bd=0)
 lbl2.place(x=500,y=100)
 x=500
 
+scrol= Scrollbar(orient=VERTICAL,width=25)
+scrol.pack(side=RIGHT,fill= Y)
+scrol= Scrollbar(root,orient=HORIZONTAL)
+scrol.pack(side=BOTTOM,fill=X)
 
 def slider_fonct():
     global image1,image2  
